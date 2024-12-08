@@ -1,0 +1,248 @@
+nav {
+    margin: 27px auto 0;
+  
+    position: relative;
+    width: 1000px;
+    height: 50px;
+    background-color: #34495e;
+    border-radius: 8px;
+    font-size: 0;
+  }
+  nav a {
+    line-height: 50px;
+    height: 100%;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+  }
+  nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+  }
+  a:nth-child(1) {
+    width: 100px;
+  }
+  a:nth-child(2) {
+    width: 110px;
+  }
+  a:nth-child(3) {
+    width: 100px;
+  }
+  a:nth-child(4) {
+    width: 160px;
+  }
+  a:nth-child(5) {
+    width: 120px;
+  }
+  a:nth-child(6) {
+    width: 100px;
+  }
+  a:nth-child(7) {
+    width: 100px;
+  }
+  a:nth-child(8) {
+    width: 100px;
+  }
+  a:nth-child(9) {
+    width: 100px;
+  }
+  nav .start-home, a:nth-child(1):hover~.animation {
+    width: 100px;
+    left: 0;
+    background-color: #8be1d0;
+  }
+  nav .start-about, a:nth-child(2):hover~.animation {
+    width: 110px;
+    left: 100px;
+    background-color: #fca399;
+  }
+  nav .start-blog, a:nth-child(3):hover~.animation {
+    width: 100px;
+    left: 210px;
+    background-color: #99d6ff;
+  }
+  nav .start-portefolio, a:nth-child(4):hover~.animation {
+    width: 160px;
+    left: 310px;
+    background-color: #e4aef9;
+  }
+  nav .start-contact, a:nth-child(5):hover~.animation {
+    width: 120px;
+    left: 470px;
+    background-color: #f9c393;
+  }
+  nav .start-contact, a:nth-child(6):hover~.animation {
+    width: 120px;
+    left: 580px;
+    background-color: #ff82e8;
+  }
+  nav .start-contact, a:nth-child(7):hover~.animation {
+    width: 120px;
+    left: 680px;
+    background-color: #a2e3ee;
+  }
+  nav .start-contact, a:nth-child(8):hover~.animation {
+    width: 120px;
+    left: 780px;
+    background-color: #65e7a2;
+  }
+  nav .start-contact, a:nth-child(9):hover~.animation {
+    width: 120px;
+    left: 880px;
+    background-color: #9aa7ff;
+  }
+  
+  body {
+    font-size: 12px;
+    font-family: sans-serif;
+   
+  }
+
+  html {
+    height:100%;
+  }
+  
+  body {
+    margin:0;
+  }
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, rgb(103, 69, 225) 50%, rgb(174, 145, 255) 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:10s;
+  }
+  
+  
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-20%);
+    }
+    100% {
+      transform:translateX(20%);
+    }
+  }
+
+
+  h1{
+    background-size: cover;
+    font-family: 'Trebuchet MS', sans-serif; 
+    font: center;
+    color:aliceblue; 
+    text-align: center;
+    font-size:3rem
+  }
+h2{
+    font-family: 'Trebuchet MS', sans-serif; 
+    font: center;
+    text-align: center;
+    font-size: 2rem; 
+    color:rgb(172, 235, 233)
+}
+  .container{
+    display: inline-block;
+  }
+  .typed-out{
+    overflow: hidden;
+    border-right: .15em solid rgb(115, 0, 255);
+    white-space: nowrap;
+    font-size: 1.6rem; 
+    font: center;
+    width: 0;
+    animation: typing 3s steps(50, end) forwards, blink .8s infinite;
+  }
+  @keyframes blink {
+  from { border-color: transparent }
+  to { border-color: rgb(255, 255, 255); }
+}
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+ 
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+h3 {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: white;
+}
+.card {
+    margin: auto;
+    position: relative;
+    display: flex;
+    width: 400px;
+    height: 300px;
+    background: #262626;
+    overflow: hidden;
+}
+.card .imgBx,
+.card .details {
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    box-sizing: border-box;
+    transition: .5s;
+}
+.card .imgBx {
+    top: 0;
+    left: 0;
+}
+.card:hover .imgBx {
+    top: 0;
+    left: -100%;
+}
+.card .imgBx img {
+    width: 100%;
+}
+.card .details {
+    background: #71bfba;
+    top: 0;
+    left: 100%;
+    padding: 60px 30px;
+}
+.card:hover .details {
+    top: 0;
+    left: 0%;
+}
+.card .details h2 {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 10px;
+    border-bottom: 2px solid #fff;
+
+}
+.card .details p {
+    margin: 20px 0 0;
+    color: #fff;
+}
