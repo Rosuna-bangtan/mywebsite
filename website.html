@@ -1,68 +1,37 @@
-<!DOCTYPE html>
-<html>
-    
+<html lang="en">
     <head>
         <title> MOTIVATIONAL QUOTES</title>
     <meta name="viewport" content=""width=device-width, initial-scale="1.0">
-    <link rel="stylesheet" type="text/css" >
+    <link rel="stylesheet" href="website.css"type="text/css" >
+    <script src="website.js"></script>
+ 
 </head>
 
-<div class="background">
-  <div class="circle1"></div>
-  <div class="circle2"></div>
-  <div class="circle3"></div>
+<element class="countdown">
+<div class="clock-wrap">
+	<div class="clock pro-0">
+		<span class="count">0</span>
+	</div>
 </div>
-<div class="background">
-<style>
-.background {
-height: 90vmin;
-position: center;
-width: 80vmin;
-
-> div {
-  animation: growAndFade 3s infinite ease-out;
-  background-color: skyblue;
-  border-radius: 50%;
-  height: 100%;
-  opacity: 0;
-  position: absolute;
-  width: 100%;
-}
-
-.circle1 {
-  animation-delay: 1s;    
-}
-.circle2 {
-  animation-delay: 2s; 
-}
-.circle3 {
-  animation-delay: 3s;
-}
-}
-
-@keyframes growAndFade {
-0% {
-  opacity: .85;
-  transform: scale(0);
-}
-100% {
-  opacity: 0;
-  transform: scale(1);
-}
-}
-
-body {
-align-items: center;
-display: flex;
-height: 100vh;
-margin: 0;
-
-}
-</style>
+<div class="action">
+	<div class="input">
+		<input class="input-num" type="number" min="1" placeholder="Enter Minute"><input data-action="start" class="input-btn" type="button" value="Start">
+	</div>
 </div>
+</element>
+
+<body>
+  <div class="background">
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+  </div>
+</body>
 
 
 
+
+<div class="photos">
 <div class="container">
     <div class="box"> <img src="https://i.pinimg.com/enabled/564x/bb/79/26/bb79260f9e35b785ab8501227436e97d.jpg"> </div>
     <div class="box"> <img src="https://i.pinimg.com/enabled/564x/5e/a2/78/5ea27815f8b775a0c4d35108c17a6a48.jpg"> </div>
@@ -95,50 +64,8 @@ margin: 0;
 
 </div>
 
-<div class="container">
-<style>
-     
-.container
-{
-    width: 1400px;
-    margin: 50px auto;
-    columns: 4;
-    column-gap: 40px;
-}
-.container.box
-{
-    width: 100%;
-    margin-bottom: 20px;
-    break-inside: avoid-column;
-}
-.container .box img
-{
-    max-width: 100%;
-    border-radius: 15px;
-}
-@media (max-width: 1200px)
-{
-    .container
-    {
-        width: calc(100% - 40px);
-        columns: 3; 
-    }
-}
-@media (max-width: 768px)
-{
-    .container
-    {
-        columns: 2; 
-    }
-}
-@media (max-width: 480px)
-{
-    .container
-    {
-        columns: 1; 
-    }
-}
-
-</style>
 </div>
+
+</html>
+
 
