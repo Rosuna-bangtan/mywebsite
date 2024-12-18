@@ -1,0 +1,154 @@
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wave Animation for Title</title>
+</head>
+<body>
+    <h5 class="wave-title">STUDY ZONE</h5>
+    <style>
+
+
+.wave-title {
+    font-size: 3em;
+    color: #007BFF;
+    display: center;
+    animation: wave 3s infinite;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-20px);
+    }
+    40% {
+        transform: translateY(10px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+    80% {
+        transform: translateY(5px);
+    }
+}
+    </style>
+</body>
+</html>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulsing Circle with Color Change</title>
+</head>
+<body>
+    <div class="pulsing-circle" id="circle"></div>
+    <button id="change-color">Change Color</button>
+    <style>
+        body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.pulsing-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ecd2ff; /* Initial color */
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.active {
+    animation: pulse 2s infinite;
+}
+    </style>
+</body>
+</html>
+
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Image</title>
+    <link rel="stylesheet" href="finalweb.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Change Background Image</h1>
+        <button id="change-bg-button">Change Background</button>
+    </div>
+
+    <script src="finalweb.js"></script>
+</body>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draggable Countdown Timer</title>
+    
+</head>
+<body2>
+    <div id="draggable-timer" class="draggable">
+        <h2>Countdown Timer</h2>
+        <div id="timer">00:00</div>
+        <div class="controls">
+            <input type="number" id="minutes" placeholder="Minutes" min="0">
+            <input type="number" id="seconds" placeholder="Seconds" min="0" max="59">
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+        </div>
+    </div>
+
+</body2>
+</html>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draggable To-Do List with Checkmarks</title>
+</head>
+<body>
+    <div id="draggable-todo" class="draggable">
+        <h3>To-Do List</h3>
+        <ul id="todo-list">
+            <li draggable="true">
+                <input type="checkbox" class="check-item"> Task 1
+            </li>
+            <li draggable="true">
+                <input type="checkbox" class="check-item"> Task 2
+            </li>
+            <li draggable="true">
+                <input type="checkbox" class="check-item"> Task 3
+            </li>
+            <li draggable="true">
+                <input type="checkbox" class="check-item"> Task 4
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Quote</title>
+</head>
+<body>
+    <div class="container">
+        <h4>Random Quote Generator</h4>
+        <button id="quote-button">Get a New Quote</button>
+        <p id="quote-display"></p>
+    </div>
+</body>
+</html>
